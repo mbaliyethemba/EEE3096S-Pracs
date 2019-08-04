@@ -88,8 +88,8 @@ def LEDOff(pin):
 
 # Logic that you write
 def main():
-    button()
-	led(counter)
+		button()
+		led(counter)
 
 
 # Only run the functions if 
@@ -102,7 +102,7 @@ if __name__ == "__main__":
         print("Exiting gracefully")
         # Turn off your GPIOs here
         GPIO.cleanup()
-    except Exception as e:
-        GPIO.cleanup()
-        print("Some other error occurred")
-        print(e.message)
+    #except Exception as e:
+        #GPIO.cleanup()
+        #print("Some other error occurred")
+        #print(e.message)
