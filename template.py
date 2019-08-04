@@ -30,6 +30,33 @@ GPIO.setup(15,GPIO.LOW)  #LED1
 
 counter = 0;
 
+#button handler
+def button():
+	global counter
+	if (GPIO.input(11) == 1 and counter != 7): #counts up
+		print("1 pressed")
+		counter += 1
+		print (bin(counter)[2:].zfill(3))
+		time.sleep(.100)
+		
+	if (GPIO.input(11) == 1 and counter == 7): #wraps around to zero
+		counter = 0
+		print (bin(counter)[2:].zfill(3))
+		time.sleep(.100)
+		
+	if (GPIO.input(13) == 1 and counter != 0): #counts down
+		print("2 pressed")
+		counter -= 1
+		print (bin(counter)[2:].zfill(3))
+		time.sleep(.100)
+		
+	if (GPIO.input(13) == 1 and counter == 0): #wraps around back to 7
+		counter = 7
+		print (bin(counter)[2:].zfill(3))
+		time.sleep(.100)
+		
+	return
+
 # Logic that you write
 def main():
     print("write your logic here")
