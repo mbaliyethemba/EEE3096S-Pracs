@@ -3,10 +3,10 @@
 Python Practical Template
 Keegan Crankshaw
 Readjust this Docstring as follows:
-Names: <names>
-Student Number: <studnum>
-Prac: <Prac Num>
-Date: <dd/mm/yyyy>
+Names: Mbaliyethemba Shangase
+Student Number: SHNMBA004
+Prac: Prac1
+Date: 04/08/2019
 """
 
 # import Relevant Librares
