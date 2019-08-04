@@ -88,7 +88,8 @@ def LEDOff(pin):
 
 # Logic that you write
 def main():
-    print("write your logic here")
+    button()
+	led(counter)
 
 
 # Only run the functions if 
